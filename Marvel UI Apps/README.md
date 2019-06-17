@@ -1,8 +1,5 @@
-# avengers
-
-A new Flutter application.
-
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+This is a simple UI app built using flutter.
+---
+<img src = "Display Images/Screenshot_20190403-082447.jpg" width = "300">
+<img src = "Display Images/Screenshot_20190403-082458.jpg" width = "300">
+<img src = "Display Images/Screenshot_20190403-082550.jpg" width = "300">

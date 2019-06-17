@@ -1,0 +1,146 @@
+name: movie_and_show_recommendations
+description: A new Flutter application.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  carousel_pro: ^0.0.1
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://www.dartlang.org/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - images/Free_Sample_By_Wix.png
+    - images/undraw_movie_night_93wl.png
+    - images/iw.jpg
+    - images/cm.jpg
+    - images/anhi.jpg
+    - images/jw.jpg
+    - images/bp.jpg
+    - images/ca.jpg
+    - images/iwr.jpg
+    - images/und.png
+    - images/dp.jpeg
+    - images/jj.jpg
+    - images/je.jpg
+    - images/ci.jpg
+    - images/dn.jpg
+    - images/si.jpg
+    - images/qp.jpeg
+    - images/oe.jpg
+    - images/kfp.jpg
+    - images/sp.jpg
+    - images/fn.jpg
+    - images/inc2.jpg
+    - images/arrival.jpg
+    - images/ma.jpg
+    - images/ince.jpg
+    - images/pass.png
+    - images/cm1.jpg
+    - images/cm2.jpg
+    - images/cm3.jpg
+    - images/bl.jpg
+    - images/slj.jpg
+    - images/jl.jpg
+    - images/gc.jpg
+    - images/bm.jpg
+    - images/tr.jpg
+    - images/im.jpg
+    - images/bp2.jpg
+    - images/bp3.jpg
+    - images/bp4.jpg
+    - images/cb.jpg
+    - images/mbj.jpg
+    - images/lr.jpg
+    - images/dg.jpg
+    - images/as.jpg
+    - images/am.jpg
+    - images/dc.jpg
+    - images/av.jpg
+    - images/tdw.jpg
+    - images/cacw.jpg
+    - images/gog.jpg
+    - images/gog2.jpg
+    - images/gog22.jpg
+    - images/gog23.jpg
+    - images/gog24.jpg
+    - images/gog25.jpg
+    - images/cp.jpg
+    - images/zs.jpg
+    - images/db.jpg
+    - images/mr.jpg
+    - images/cg.jpg
+    - images/iw1.jpg
+    - images/iw2.jpg
+    - images/iw3.jpg
+    - images/iw4.jpg
+    - images/ch.jpg
+    - images/bc.jpg
+    - images/rdj.jpg
+    - images/ce.jpg
+    - images/eo.jpg
+    - images/dp.jpg
+    - images/dp2.jpg
+    - images/dp3.jpg
+    - images/dp4.jpg
+    - images/rr.jpg
+
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.io/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.io/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.io/custom-fonts/#from-packages

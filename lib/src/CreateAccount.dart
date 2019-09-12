@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import './SeedPage.dart';
 import 'package:bip39/bip39.dart' as bip39;
 import 'package:bitcoin_flutter/bitcoin_flutter.dart' as bitflut;
@@ -17,9 +18,11 @@ class _CreateNewAccountState extends State<CreateNewAccount> {
 
   @override
   Widget build(BuildContext context) {
+    final key = new GlobalKey<ScaffoldState>();
     var appHeight = MediaQuery.of(context).size.height;
     var appWidth = MediaQuery.of(context).size.width;
     return Scaffold(
+      key: key,
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -89,14 +92,22 @@ class _CreateNewAccountState extends State<CreateNewAccount> {
                 width: appWidth / 1.2,
                 height: appHeight / 8,
                 child: Center(
-                  child: (tKey)
-                      ? Text(
-                          element,
-                          style: TextStyle(
-                            fontSize: appWidth / 20,
-                          ),
-                        )
-                      : Text(""),
+                  child: GestureDetector(
+                    child: (tKey)
+                        ? Text(
+                            element,
+                            style: TextStyle(
+                              fontSize: appWidth / 20,
+                            ),
+                          )
+                        : Text(""),
+                    onLongPress: () {
+                      Clipboard.setData(new ClipboardData(text: element));
+                      key.currentState.showSnackBar(new SnackBar(
+                        content: new Text("Copied to Clipboard"),
+                      ));
+                    },
+                  ),
                 ),
                 margin: EdgeInsets.only(
                     top: appHeight / 9,
@@ -109,7 +120,7 @@ class _CreateNewAccountState extends State<CreateNewAccount> {
               Container(
                 child: (tKey)
                     ? Text(
-                        "Copy this phrase in the same order and store it safely",
+                        "1.Copy this phrase in the same order and store it safely\n2.LongPress to Copy on Clipboard",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: appWidth / 18,

@@ -10,8 +10,8 @@
         
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="eth_wallet"
-        android:icon="@mipmap/ic_launcher">
+        android:label="Razor Network"
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
